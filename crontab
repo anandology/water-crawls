@@ -1,0 +1,5 @@
+
+ROOT=/home/anand/water-crawls
+
+5 * * * * anand cd $ROOT/bwssb && ../venv/bin/python bwssb.py download
+
