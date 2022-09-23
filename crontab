@@ -1,5 +1,10 @@
-
+#
+# Crontab for water-crawls
+#
+# Install this using:
+#   sudo cp crontab /etc/cron.d/water-crawls
+#
 ROOT=/home/anand/water-crawls
 
-5 * * * * anand cd $ROOT/bwssb && ../venv/bin/python bwssb.py download
+5 * * * * anand cd $ROOT/bwssb && ../venv/bin/python bwssb.py download > $ROOT/water-crawls.log 2>&1
 
