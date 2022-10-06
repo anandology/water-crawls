@@ -1,3 +1,19 @@
+create table stp (
+    name text primary key,
+    title text,
+    capacity text,
+    section text
+);
+
+create table metric (
+    name text primary key,
+    title text,
+    lower_limit float,
+    upper_limit float,
+    unit text
+);
+
+
 create table water_quality (
     stp_name text,
     timestamp text,

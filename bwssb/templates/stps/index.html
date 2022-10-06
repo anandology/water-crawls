@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Sewage Treatment Plants in Bangalore
+</h1>
+
+<table class="table is-striped">
+   <thead>
+       <tr>
+           <th>#</th>
+           <th>Name</th>
+       </tr>
+   </thead>
+   <tbody>
+    {% for stp in stps %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td><a href="/stps/{{stp.name}}">{{stp.title}}</a></td>
+        </tr>
+        {% endfor %}
+   </tbody>
+
+</nav>
+{% endblock %}

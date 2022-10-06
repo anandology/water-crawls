@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Water Quality Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+  <div class="container">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <strong>Water Crawls</strong>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/data">Data</a>
+        <a class="navbar-item" href="/stps">STPs</a>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <section class="section">
+    <div class="container">
+      {% block content %}
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+      {% endblock %}
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+  <script type="text/javascript" src="/static/site.js"></script>
+
+  <!-- <footer class="footer">
+    <div class="container">
+      <p>
+        <strong>Water Crawls</strong> by <a href="https://anandology.com">Anand Chitipothu</a>.<br>
+        The source code is licensed <a href="https://opensource.org/licenses/mit-license.php">MIT</a>.<br>
+        The website content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer> -->
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Dashboard
+</h1>
+<p class="subtitle">
+  Summary of water quality data published by BWSSB!
+</p>
+
+<article class="message">
+    <div class="message-body">
+      <p>This website is an analysis of the water quality data published by BWSSB.</p>
+
+      <p>Check out the <a href="/data">raw data</a> or
+     <a href="https://tpro.telsys.in/tpportal/bwssb">the original source</a>.</p>
+    </div>
+  </article>
+
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        Capacity
+      </p>
+    </header>
+    <div class="card-content">
+        <div class="content">
+          <p>Total Capacity: 500 MLD</p>
+          <p>Utilized Capacity: 200 MLD</p>
+        </div>
+      </div>
+  </div>
+
+{% endblock %}
