@@ -1,0 +1,10 @@
+name,title,lower_limit,upper_limit,unit
+ph,pH,6.5,9.0,pH
+temperature,Temperature,24,27,°C
+ammonical_nitrogen,Ammonical Nitrogen,0,5,mg/l
+total_nitrogen,Total Nitrogen,0,10,mg/l
+cod,COD,0,50,mg/l
+bod,BOD,0,10,mg/l
+tss,RSS,0,20,mg/l
+color,Color,,,hu
+dissolved_oxygen,Dissolved Oxygen,,,mg/l
