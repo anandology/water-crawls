@@ -6,5 +6,6 @@
 #
 ROOT=/home/anand/water-crawls
 
-5 * * * * anand cd $ROOT/bwssb && ../venv/bin/python bwssb.py download > $ROOT/water-crawls.log 2>&1
+5 * * * * anand cd $ROOT/bwssb && ../venv/bin/python bwssb.py download >> $ROOT/water-crawls.log 2>&1
+10 * * * * anand cd $ROOT/kspcb && ../venv/bin/python kspcb.py download >> $ROOT/water-crawls.log 2>&1
 
